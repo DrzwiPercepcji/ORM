@@ -7,8 +7,8 @@
 
     <persistence-unit name="DepartmentService">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>model.Department</class>
-        <class>model.User</class>
+        <class>app.Department</class>
+        <class>app.User</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/rsuc"/>
             <property name="javax.persistence.jdbc.user" value="rsuc"/>

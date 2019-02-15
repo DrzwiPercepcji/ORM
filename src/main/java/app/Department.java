@@ -1,4 +1,4 @@
-package model;
+package app;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +17,7 @@ public class Department {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "name", length = 100)
     private String name;
@@ -26,7 +26,7 @@ public class Department {
     @OneToOne(cascade = CascadeType.PERSIST, optional = false)
     private User manager;
 
-    private Integer managerId;
+    //private Integer managerId;
 
     @Column(name = "address", length = 200)
     private String address;
@@ -45,6 +45,6 @@ public class Department {
 
     public void setManager(User user) {
         manager = user;
-        managerId = user.getId();
+        //managerId = user.getId();
     }
 }

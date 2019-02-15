@@ -1,12 +1,12 @@
-import model.Department;
-import model.User;
+import app.Department;
+import app.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
 
-class Service {
+public class Service {
     private EntityManager em;
 
     Service() {

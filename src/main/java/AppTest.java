@@ -1,5 +1,5 @@
-import model.Department;
-import model.User;
+import app.Department;
+import app.User;
 
 import lombok.extern.java.Log;
 import org.h2.tools.Server;

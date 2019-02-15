@@ -1,4 +1,4 @@
-package model;
+package app;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,13 +18,13 @@ public class User {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @ToString.Exclude
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Department department;
 
-    private Integer departmentId;
+    //private Integer departmentId;
 
     @Column(name = "username", length = 100)
     private String username;
@@ -52,6 +52,6 @@ public class User {
 
     public void setDepartment(Department department) {
         this.department = department;
-        departmentId = department.getId();
+        //departmentId = department.getId();
     }
 }
